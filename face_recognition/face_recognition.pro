@@ -1,6 +1,6 @@
 -------------------------------------------------
 
-QT += core gui network
+QT += core gui network xml
 
 
 
@@ -23,7 +23,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        src/main.cpp
+        src/main.cpp        \
+        src/core.cpp        \
+        src/bee.cpp         \
+        src/common.cpp      \
+        src/qtutils.cpp     \
+        src/resource.cpp    \
+        src/opencvutils.cpp
 
 HEADERS +=
 
@@ -31,7 +37,7 @@ FORMS +=
 
 
 INCLUDEPATH += /usr/local/include/opencv /usr/local/include/openbr
-LIBS += -L/usr/local/lib -lopencv_highgui -lopenbr -lopencv_core
+LIBS += -L/usr/local/lib -lopencv_highgui -lopenbr -lopencv_core -lRandom
 
 
 

@@ -1,0 +1,27 @@
+Note: breakpoint 2 also set at pc 0x401df0.
+Breakpoint 3 at 0x401df0
+Starting program: /usr/local/bin/br -gui -algorithm "Cvt(Gray)+Show(false)" -enroll 0.webcam test10.jpg
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fffe86ff700 (LWP 14874)]
+[New Thread 0x7fffde4bb700 (LWP 14875)]
+[New Thread 0x7fffddca3700 (LWP 14876)]
+[New Thread 0x7fffdd4a2700 (LWP 14877)]
+[New Thread 0x7fffcffff700 (LWP 14879)]
+[New Thread 0x7fffcf7fe700 (LWP 14880)]
+[New Thread 0x7fffceffd700 (LWP 14881)]
+[Switching to Thread 0x7fffceffd700 (LWP 14881)]
+
+Thread 8 "Thread (pooled)" hit Breakpoint 1, 0x00007ffff755f7a4 in br_enroll_n () from /usr/local/lib/libopenbr.so.1.1
+Single stepping until exit from function br_enroll_n,
+which has no line number information.
+[Thread 0x7fffcf7fe700 (LWP 14880) exited]
+[New Thread 0x7fffcf7fe700 (LWP 14882)]
+[New Thread 0x7fffce556700 (LWP 14883)]
+[New Thread 0x7fffcdd55700 (LWP 14884)]
+[New Thread 0x7fffb27ed700 (LWP 14887)]
+[New Thread 0x7fffb1fec700 (LWP 14892)]
+
+Thread 12 "Thread (pooled)" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fffb27ed700 (LWP 14887)]
+0x00007ffff757e822 in br::Transform::project(br::TemplateList const&, br::TemplateList&) const () from /usr/local/lib/libopenbr.so.1.1
